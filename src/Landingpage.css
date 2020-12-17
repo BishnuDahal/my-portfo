@@ -1,0 +1,170 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #001;
+    position: relative;
+    overflow: hidden;
+    
+}
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/profile.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    object-fit: contain;
+    animation: profile 7s linear infinite;
+}
+@keyframes profile{
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+.landing-page{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    padding: 0px 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.landing-page h1{
+    color: #D1197E;
+    padding-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 300;
+
+}
+.landing-page p{
+    color: #f6f6f6;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 70px;
+}
+
+.landing-page a{
+    display: inline-block;
+    text-decoration: none;
+    color: #FF13B1;
+    font-size: 20px;
+    border: 2px solid #ff7979;
+    padding: 10px 20px;
+}
+.landing-page a:hover{
+    color: #fff;
+    background: #e20ce2;
+}
+@media screen and (max-width:800px){
+    .landing-page a{
+        margin-bottom: 60px;
+    }
+}
+
+/* Skill and Animation */
+
+.skillanimate{
+    background-color: #333;
+    opacity: 1;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0px;
+    
+    margin: 7%;
+
+}
+.skillanimate li{
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #e20ee2;
+}
+.html{
+    width: 90%;
+    animation: html 2s infinite;
+}
+.Css{
+    width: 75%;
+    animation: Css 2s infinite;
+}
+.Bootstrap{
+    width: 75%;
+    animation: Css 2s infinite;
+}
+.Javascript{
+    width: 65%;
+    animation: Javascript 2s infinite;
+}
+.Firebase{
+    width: 25%;
+    animation: Firebase 2s infinite;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes Css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes Bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes Javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes Firebase{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}

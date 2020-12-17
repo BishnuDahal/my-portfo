@@ -1,0 +1,77 @@
+.client-say{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.client-say h2{
+    padding: 30px;
+    font-size: 40px;
+    letter-spacing: 0.1rem;
+}
+.client-say p{
+    font-size: 20px;
+    width: 70%;
+    font-weight: 500;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #999999;
+}
+.clientbox{
+   display: flex;
+   padding: 20px;
+   
+    
+}
+
+.client{
+    flex: 50%;
+    width: 100%;
+    margin: 2%;
+    
+   
+}
+.clientdetails{
+    padding: 10px;
+}
+.client h3{
+    font-size: 20px;
+    font-weight: 500;
+} 
+.client h5{
+    font-size: 17px;
+    font-weight: 300;
+}
+.client p{
+    font-size: 17px;
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    color: #999999;
+    
+}
+.image-container{
+    width: 25%;
+    margin: 15px auto;
+}
+.image-container img{
+    width: 100%;
+   border-radius: 50px;
+    box-shadow: 0 0 10px #999999;
+} 
+.second{
+    padding: 40px ;
+    padding-bottom: 0px;
+}
+
+@media screen and (max-width:800px){
+    .clientbox{
+        display: block;
+    }
+    .client{
+        width: 100%;
+        flex: 100%;
+    }
+}
