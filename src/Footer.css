@@ -2,24 +2,21 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .card{
-    flex: 1;
-   background-color:#202333;
-   margin: 15px;
-    padding: 25px;
+    flex: 80%;
+    background-color:#202333;
+    margin: 15px;
     min-height: 25vh;
+    width: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 100%;
     font-size: 30px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     flex-direction: column;
-    max-width: 1200px;
 }
 .card p{
     margin-top: 10px;
@@ -39,32 +36,26 @@
     justify-content: center;
     line-height: 30px !important;
     border-radius: 50%;
-    margin-top: 40px;
-    
-    
+    margin-top: 40px;  
 }
 .card:hover p{
-    opacity: 1;
-    
+    opacity: 1;  
 }
 
 .card:hover > .card-icon{
     color: #fff;
     background: #FF13B1;
-    transform: scale(1.3);
-    
+    transform: scale(1.3);  
 }
 @media screen and (max-width:1000px){
     .contact-info{
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
     .card{
         width: 100%;
         max-width: 300px;
         }
         .card:hover > p{
-            opacity: 1;
-            
+            opacity: 1;  
         }
 }

@@ -1,23 +1,21 @@
 .header{
     height: 10vh;
+    display: flex;
     background-color: #001;
     padding: 0px 20px;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
+    justify-content: space-around;
 }
 .logo{
     font-size: 25px;
-    float: left;
     letter-spacing: 0.1rem;
-    line-height: 60px;
 }
-.menu{
-    float: right;
-    padding-right: 50px;
-    line-height: 60px;
+.menu, .menu_icons{
+    padding-right: 20px;  
 }
-.menu a{
+ .menu_link{
     text-decoration: none;
     padding: 0px 20px;
     color: #fff;
@@ -25,7 +23,7 @@
     transition: 0.4s;
     letter-spacing: 0.1rem;
 }
-.menu a:hover{
+ .menu_link:hover{
     color: green;
 }
 .show-menu, .hide-menu{
@@ -53,7 +51,7 @@
     .logo{
         line-height: 25px;
     }
-    .menu{
+    .menu, .menu_icons{
         position: absolute;
         top: 0;
         right: -100%;
@@ -70,7 +68,7 @@
         display: none;
         
     }
-    .menu a{
+     .menu_link{
         display: block;
         padding: 30px;
     }

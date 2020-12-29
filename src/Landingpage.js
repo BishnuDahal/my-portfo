@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Landingpage.css'
 
 export default function Landingpage() {
@@ -8,8 +9,10 @@ export default function Landingpage() {
     <div class="container">
         <div class="landing-page">
             <h1>Hi I'm Bishnu Dahal</h1>
-            <p>I'm a Front End Developer Living In Kathmandu,Nepal.I am a student of Computer Science Information Technology.I design Frontend using HTML CSS and JAVASCRIPT(REACT). </p>
-            <a href="#aboutpage">Learn more</a>
+            <p>Exceptionally creative and dependable Intermediate Level Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable
+in a variety of computer language as well as the principles and techniques of website construction and maintenance. Highly adept at conveying complex technical
+information to a variety of professional and lay audiences in a clear and understandable manner. </p>
+            <Link to="/project">Learn more</Link>
         </div>
     </div>
     {/* Skills and Animation */}
