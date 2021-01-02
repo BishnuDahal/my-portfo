@@ -11,7 +11,7 @@ export default function Landingpage() {
             <h1>Hi I'm Bishnu Dahal</h1>
             <p> I'm a Web Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable
 in a variety of computer language as well as the principles and techniques of website construction and maintenance. </p>
-            <Link to="/project">Learn more</Link>
+            <Link to="/project">Know more</Link>
         </div>
     </div>
     {/* Skills and Animation */}

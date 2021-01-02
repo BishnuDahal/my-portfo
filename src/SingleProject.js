@@ -1,11 +1,10 @@
+
 import React, { useEffect, useState } from "react";
 import './SinglePost.css';
 import { useParams } from "react-router-dom";
 import sanityClient from "./client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
-
-
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -39,7 +38,6 @@ export default function OneProject( ) {
   }, [slug]);
   console.log(projectData, "pd");
   if (!projectData) return <div>Loading...</div>;
-
   return (
     <>
     <h2>{projectData.title}</h2>
@@ -55,8 +53,7 @@ export default function OneProject( ) {
           <strong>Finished {projectData.name} on</strong>:{" "} 
          {new Date(projectData.date).toLocaleDateString()}
           </span>
-          <div class="sharethis-inline-share-buttons">
-          </div>
+          
         </div> 
         <BlockContent
           blocks= {projectData.body}

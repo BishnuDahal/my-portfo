@@ -58,7 +58,9 @@ export default function OnePost( ) {
           <strong>Published by {postData.name} on</strong>:{" "} 
          {new Date(postData.publishedAt).toLocaleDateString()}
           </span>
-        </div> 
+        </div>
+          <div class="addthis_inline_share_toolbox"></div>
+            
         <BlockContent
           blocks= {postData.body}
           projectId= "xyb9vdii"
