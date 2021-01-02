@@ -43,6 +43,10 @@ export default {
       type: 'datetime',
     },
     {
+      name: "place",
+      type: "string",
+  },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
@@ -52,6 +56,18 @@ export default {
       title: 'Description',
       type: 'text',
     },
+    {
+      name: "tags",
+      type: "array",
+      of: [
+          {
+              type: "string",
+          },
+      ],
+      options: {
+          layout: "tags",
+      },
+  },
   ],
 
   preview: {

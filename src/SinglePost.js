@@ -58,6 +58,15 @@ export default function OnePost( ) {
           <strong>Published by {postData.name} on</strong>:{" "} 
          {new Date(postData.publishedAt).toLocaleDateString()}
           </span>
+          <span>
+          <strong>Tags</strong>:{" "} 
+         {postData.tags}
+          </span><br/>
+          <span>
+          <strong>place</strong>:{" "} 
+         {postData.place}
+          </span> <br/>
+          <span></span>
         </div>
                 <div class="addthis_inline_share_toolbox_15sz"></div>
             

@@ -60,6 +60,15 @@ export default function Blog() {
           <strong>Published by {post.name} on</strong>:{" "} 
          {new Date(post.publishedAt).toLocaleDateString()}
           </span>
+          <span>
+          <strong>Tags</strong>:{" "} 
+         {post.tags}
+          </span><br/>
+          <span>
+          <strong>Place</strong>:{" "} 
+         {post.place}
+          </span> <br/>
+          <span></span>
       
         </div> 
                 <p> {post.description} </p>
