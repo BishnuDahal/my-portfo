@@ -9,9 +9,8 @@ export default function Landingpage() {
     <div class="container">
         <div class="landing-page">
             <h1>Hi I'm Bishnu Dahal</h1>
-            <p>Exceptionally creative and dependable Intermediate Level Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable
-in a variety of computer language as well as the principles and techniques of website construction and maintenance. Highly adept at conveying complex technical
-information to a variety of professional and lay audiences in a clear and understandable manner. </p>
+            <p> I'm a Web Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable
+in a variety of computer language as well as the principles and techniques of website construction and maintenance. </p>
             <Link to="/project">Learn more</Link>
         </div>
     </div>
@@ -21,7 +20,7 @@ information to a variety of professional and lay audiences in a clear and unders
             <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
         </li>
         <li>
-            <h3>CSS/Flexbox</h3><span class="bar"><span class="Css"></span></span>
+            <h3>CSS/SaaS/Flexbox/Grid</h3><span class="bar"><span class="Css"></span></span>
         </li>
         <li>
             <h3>Bootstrap/Material UI</h3><span class="bar"><span class="Bootstrap"></span></span>
@@ -30,7 +29,7 @@ information to a variety of professional and lay audiences in a clear and unders
             <h3>JAVASCRIPT(REACT)</h3><span class="bar"><span class="Javascript"></span></span>
         </li>
         <li>
-            <h3>Firebase</h3><span class="bar"><span class="Firebase"></span></span>
+            <h3>Wordpress/Firebase/Sanity.io</h3><span class="bar"><span class="Firebase"></span></span>
         </li>
        </div>
         </div>

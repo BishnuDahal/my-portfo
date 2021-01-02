@@ -5,6 +5,9 @@ import sanityClient from "./client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
+
+
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -13,7 +16,7 @@ function urlFor(source) {
 export default function OneProject( ) {
   const [projectData, setprojectData] = useState(null);
   const { slug } = useParams();
-
+  
   useEffect(() => {
     sanityClient
       .fetch(
@@ -52,6 +55,8 @@ export default function OneProject( ) {
           <strong>Finished {projectData.name} on</strong>:{" "} 
          {new Date(projectData.date).toLocaleDateString()}
           </span>
+          <div class="sharethis-inline-share-buttons">
+          </div>
         </div> 
         <BlockContent
           blocks= {projectData.body}
