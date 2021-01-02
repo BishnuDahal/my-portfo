@@ -9,7 +9,7 @@ export default function Landingpage() {
     <div class="container">
         <div class="landing-page">
             <h1>Hi I'm Bishnu Dahal</h1>
-            <p> I'm a Web Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable
+            <p> I'm a Web Developer with a stellar customer service records and superb work ethic. Broadly and deeply knowledgeable
 in a variety of computer language as well as the principles and techniques of website construction and maintenance. </p>
             <Link to="/project">Know more</Link>
         </div>

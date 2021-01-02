@@ -59,7 +59,8 @@ export default function OnePost( ) {
          {new Date(postData.publishedAt).toLocaleDateString()}
           </span>
         </div>
-          <div class="addthis_inline_share_toolbox"></div>
+                <div class="addthis_inline_share_toolbox_15sz"></div>
+            
             
         <BlockContent
           blocks= {postData.body}
