@@ -5,7 +5,7 @@
     background-color: #151320;
     width: 98%;
     place-items: center center;
-    font-family: 'Poppins',sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 .blog_cards{
     width: 90%;
@@ -48,7 +48,14 @@ img{
     letter-spacing: 0.1px;
 }
 .author_details {
-    display: flex;
+    display: block;
+    
+}
+.author_image {
+    margin: auto;
+}
+.author_details strong {
+    color: #FF13B1;
 }
 .blog_details p{
     color: #fff;

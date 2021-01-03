@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 import CloseIcon from '@material-ui/icons/Close';
 import MenuIcon from '@material-ui/icons/Menu';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
 import HomeIcon from '@material-ui/icons/Home';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 
@@ -18,7 +18,7 @@ export default function Navbar() {
         
     
             <div className="header">
-        <h2 className="logo">weEdCode</h2>
+    <img src="assets/nepal.png" alt="nepal_flag"  className="logo"/>
         
         <input type="checkbox" id="chk"/>
         <label for="chk" className="show-menu"><MenuIcon></MenuIcon></label>
@@ -32,9 +32,9 @@ export default function Navbar() {
             </label>
         </ul>
         <ul className="menu_icons">
-            <Link to="/" className="menu_link"><FacebookIcon></FacebookIcon></Link> 
+            <Link to="https://github.com/BishnuDahal" className="menu_link"><GitHubIcon></GitHubIcon></Link> 
             <Link to="https://www.youtube.com/channel/UCWTlZSeBAZN2ErsLfCsb1uA?view_as=subscriber" className="menu_link"><YouTubeIcon></YouTubeIcon></Link>
-            <Link to="/" className="menu_link"><InstagramIcon></InstagramIcon></Link>
+            <Link to="https://www.facebook.com/bishnu.dahal.5872" className="menu_link"><FacebookIcon></FacebookIcon></Link>
 
         </ul>
     </div>

@@ -28,7 +28,6 @@ export default function Blog() {
      .then((data) => setProjectData(data))
      .catch(console.error);
     }, []);
-    console.log(projectData, 'slg');
     return (
 <>
 <h2>Projects</h2>

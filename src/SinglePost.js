@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './SinglePost.css';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import sanityClient from "./client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
@@ -21,6 +21,8 @@ export default function OnePost( ) {
           title,
           publishedAt,
           slug,
+          tags,
+          place,
           mainImage{
             asset->{
               _id,
@@ -49,15 +51,17 @@ export default function OnePost( ) {
       <div className="singlepost_blog_details">
         
         <div className="author_details">
+        <span>
            <img
            className="author_image"
             src={urlFor(postData.authorImage).url()}
             alt="Author is Bishnu"
-          />
+          /></span>
+          <br/>
           <span>
           <strong>Published by {postData.name} on</strong>:{" "} 
          {new Date(postData.publishedAt).toLocaleDateString()}
-          </span>
+          </span><br/>
           <span>
           <strong>Tags</strong>:{" "} 
          {postData.tags}
@@ -77,6 +81,7 @@ export default function OnePost( ) {
           dataset= "production"
         />
       </div>
+      <Link to="/blog" className="blog_button">Read Blogs</Link>
     </div>
     </>
   );

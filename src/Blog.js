@@ -20,6 +20,8 @@ export default function Blog() {
         publishedAt,
         slug,
         description,
+        tags,
+        place,
         mainImage{
             asset->{
                 _id,
@@ -35,7 +37,6 @@ export default function Blog() {
      .then((data) => setPodata(data))
      .catch(console.error);
     }, []);
-    console.log(podata, 'slg');
     return (
 <>
 <h2>Blogs</h2>
@@ -51,15 +52,16 @@ export default function Blog() {
                 <h3> {post.title} </h3>
             
                 <div className="author_details">
-           <img
+               <span><img
            className="author_image"
             src={urlFor(post.authorImage).url()}
             alt="Author is Bishnu"
           />
+          </span> 
           <span>
           <strong>Published by {post.name} on</strong>:{" "} 
          {new Date(post.publishedAt).toLocaleDateString()}
-          </span>
+          </span><br/>
           <span>
           <strong>Tags</strong>:{" "} 
          {post.tags}
@@ -69,7 +71,7 @@ export default function Blog() {
          {post.place}
           </span> <br/>
           <span></span>
-      
+          <div class="addthis_inline_share_toolbox_15sz"></div>
         </div> 
                 <p> {post.description} </p>
             </div>

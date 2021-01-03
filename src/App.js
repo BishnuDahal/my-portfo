@@ -10,7 +10,6 @@ import Clientsection from './Clientsection';
 import Footer from './Footer';
 
 import {BrowserRouter as  Router, Route, Switch } from 'react-router-dom';
-import Aboutproject from './Aboutproject';
 import SinglePost from './SinglePost';
 import SingleProject from './SingleProject';
 
@@ -26,9 +25,6 @@ function App() {
       </Route>
       <Route exact path="/blog">
       <Blog />
-      </Route>
-      <Route exact path="/aboutproject">
-      <Aboutproject />
       </Route>
       <Route exact path="/blog:slug">
       <SinglePost />

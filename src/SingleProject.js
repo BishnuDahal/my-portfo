@@ -36,7 +36,6 @@ export default function OneProject( ) {
       .then((data) => setprojectData(data[0]))
       .catch(console.error);
   }, [slug]);
-  console.log(projectData, "pd");
   if (!projectData) return <div>Loading...</div>;
   return (
     <>

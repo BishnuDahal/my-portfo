@@ -7,10 +7,11 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
     justify-content: space-around;
+    
 }
-.logo{
-    font-size: 25px;
-    letter-spacing: 0.1rem;
+ .logo {
+    width: auto;
+    object-fit: contain;
 }
 .menu, .menu_icons{
     padding-right: 20px;  
@@ -35,7 +36,8 @@
 }
 .show-menu{
     float: right;
-    line-height: 70px;
+    line-height: 45px;
+    font-size: 75px;
 
 }
 #chk{
@@ -48,9 +50,7 @@
         display: block;
          
     }
-    .logo{
-        line-height: 25px;
-    }
+    
     .menu, .menu_icons{
         position: absolute;
         top: 0;

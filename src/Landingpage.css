@@ -17,17 +17,17 @@
     background-size: cover;
     opacity: 0.3;
     object-fit: contain;
-    animation: profile 7s linear infinite;
+    animation: profile 5s linear infinite;
 }
 @keyframes profile{
     0%{
-        transform: scale(0.6);
-    }
-    50%{
         transform: scale(1);
     }
+    50%{
+        transform: scale(1.1);
+    }
     100%{
-        transform: scale(0);
+        transform: scale(1);
     }
 }
 .landing-page{
@@ -64,7 +64,7 @@
     color: #FF13B1;
     font-size: 20px;
     border: 2px solid #ff7979;
-    padding: 10px 20px;
+    padding: 8px 20px;
 }
 .landing-page a:hover{
     color: #fff;
