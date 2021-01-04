@@ -23,6 +23,8 @@ export default function OneProject( ) {
           title,
           date,
           slug,
+          tags,
+          place,
           mainImage{
             asset->{
               _id,
@@ -51,8 +53,19 @@ export default function OneProject( ) {
           <span>
           <strong>Finished {projectData.name} on</strong>:{" "} 
          {new Date(projectData.date).toLocaleDateString()}
-          </span>
-          
+          </span><br/>
+          <span>
+          <strong>Language</strong>:{" "} 
+         {projectData.tags}
+          </span><br/>
+          <span>
+          <strong>place</strong>:{" "} 
+         {projectData.place}
+          </span> <br/>
+          <span>
+          <strong>ProjectType</strong>:{" "} 
+         {projectData.projectType}
+          </span> 
         </div> 
         <BlockContent
           blocks= {projectData.body}

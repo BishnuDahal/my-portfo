@@ -8,19 +8,19 @@ import PhoneCallbackIcon from '@material-ui/icons/PhoneCallback';
 export default function Footer() {
     return (
         <div>
-             <div class="contact-info" id="contact-info">
-                <div class="card">
-                        <EmailIcon class="card-icon"></EmailIcon >
+             <div className="contact-info" id="contact-info">
+                <div className="card">
+                        <EmailIcon className="card-icon"></EmailIcon >
                         <p>Email: bishnu.dahal630@gmail.com</p>
                     </div>
 
-                    <div class="card">
-                            <SubscriptionsIcon class="card-icon"></SubscriptionsIcon>
+                    <div className="card">
+                            <SubscriptionsIcon className="card-icon"></SubscriptionsIcon>
                             <p>weEdCode</p>
                         </div>
 
-               <div class="card">
-                   <PhoneCallbackIcon class="card-icon"></PhoneCallbackIcon>
+               <div className="card">
+                   <PhoneCallbackIcon className="card-icon"></PhoneCallbackIcon>
                    <p>+977 9863847606</p>
                </div>
 

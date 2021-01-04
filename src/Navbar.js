@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link to="/" className="menu_link"><HomeIcon></HomeIcon></Link>
             <Link to="/blog" className="menu_link">Blog</Link>
             <Link to="/project" className="menu_link">Project</Link>
-            <Link to="#contact-info" className="menu_link"><ContactMailIcon></ContactMailIcon></Link>
+            <a href="#contact-info" className="menu_link"><ContactMailIcon></ContactMailIcon></a>
             <label for="chk" className="hide-menu">
                 <CloseIcon></CloseIcon>
             </label>

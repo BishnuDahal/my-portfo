@@ -61,6 +61,7 @@ export default function Blog() {
         </div> 
                 <p> {project.description} </p>
             </div>
+            <Link  to={"/project" + project.slug.current} key={project.slug.current} className="blog_button">Read More</Link>
     </div>
     </Link>
     </div>
